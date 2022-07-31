@@ -1,0 +1,19 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Test Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moza2000/MyRepository.git"
+  },
+  "author": "Mozamil Ahmadzaei ahmadzaei@hotmail.de",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moza2000/MyRepository/issues"
+  },
+  "homepage": "https://github.com/Moza2000/MyRepository#readme"
+}
