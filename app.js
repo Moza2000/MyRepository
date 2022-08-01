@@ -1,27 +1,11 @@
-let display = document.getElementById('display');
+const express = require("express");
 
-let buttons = Array.from(document.getElementsByClassName('button'));
+const app = express();
 
-buttons.map( button => {
-    button.addEventListener('click', (e) => {
-        switch(e.target.innerText){
-            case 'C':
-                display.innerText = '';
-                break;
-            case '=':
-                try{
-                    display.innerText = eval(display.innerText);
-                } catch {
-                    display.innerText = "Error"
-                }
-                break;
-            case '←':
-                if (display.innerText){
-                   display.innerText = display.innerText.slice(0, -1);
-                }
-                break;
-            default:
-                display.innerText += e.target.innerText;
-        }
-    });
+app.get("", (req, res) => {
+    res.send("Hello There DU Hund !");
+});
+
+app.listen(3000, () => {
+    console.log("Server is running on port 3000");
 });
