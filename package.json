@@ -8,6 +8,18 @@
     "start": "node app.js",
     "devStart": "nodemon app.js"
   },
+  "husky": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{html,css}": [
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Moza2000/MyRepository.git"
@@ -21,5 +33,10 @@
   "dependencies": {
     "express": "^4.18.1",
     "nodemon": "^2.0.19"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "husky": "^8.0.1"
   }
 }
